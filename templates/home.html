@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student records</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    </head>
+  <body>
+    <table>
+      <thead>
+      <tr>
+      <th>ID</th>
+        <th>Name</th>
+          <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for std in students %}
+        <tr>
+          <td>{{std.first_name}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+  </body>
+</html>
